@@ -1,0 +1,481 @@
+a {
+	text-decoration: none;
+	color: cyan;
+
+}
+
+p {
+	color: black;
+}
+/* id seçöe */
+h1#baslik{
+
+	color: #30336b;
+	font-size: 55px;
+}
+/* class seçme */
+div.div1{
+	font-size: 35px;
+    color: green;
+	background-color: red;
+
+}
+/* Toplu seçme özelliği */
+p,h1,a,div{
+
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+/*Tüm etiketleri seçer*/
+* {
+	text-decoration:overline;
+}
+/*Tüm pragraflar için özellikler belirliyelim*/
+p{
+	/*satırlar arası boşluğu belirler 
+	100% standart boşluktur
+	15px 
+	 */
+
+	line-height:200%;
+
+	/* kelimeler arası boşluk belirler*/
+	word-spacing: 1cm;
+
+	/*harfler arası boşluk*/
+
+	letter-spacing:0.3cm;
+
+	/*Yazıların hizalanmasını sağlar*/
+
+	text-align:center;
+
+
+	/*yazıları çizgi ile çizilmesini sağlar*/
+	text-decoration: line-through;
+
+
+}
+p#hepsikucuk{
+	/*yazıların büyük küçük olmasını belirler */
+
+	text-transform: lowercase;
+} 
+p#hepsibuyuk{
+	text-transform: uppercase;
+}
+
+p#ilkbuyuk{
+	text-transform: capitalize;
+}
+
+	/*yazıların içerden başlamasını belirler */
+p#icerdema{
+
+
+	text-indent: 10cm;
+}
+body{
+	background-color: #EE5A24;
+}
+div#sayfa{
+	width: 1200px;
+	height: 1500px;
+	margin: auto;
+	border: 1px solid;
+
+	background-image: url("1.jpg");
+	background-repeat: no-repeat;
+	background-position:center;
+    /*resmin sayfayı kaplamasıını sağlar*/
+	background-size: cover; 
+	/*remisn kendi genişliğine göre sığdırır contain*/
+
+	background-attachment: fixed;
+
+
+
+}
+div#sayfa p{
+	background-color: pink;
+}
+
+div#sayfa h1{
+	background:url("2.png"); 
+	background-size: contain;
+}
+div#ikinci{
+
+	width: 600px;
+	height: 400px;
+	border:25px solid red;
+	border-style: ridge;
+	margin: auto;
+	border-radius: 50px 25px 50px 25px;
+	background-color: #EAB543;
+/*
+	border-top-left-radius:75px; 
+	border-top-left-radius:50px;
+	border-bottom-right-radius:5px; 
+	border-top-left-radius:25px;
+
+*/
+	border-image: url(border.jpg) 25 round;
+	/*border-image-slice: 25;
+	border-image-repeat: round;
+	*/
+}
+div#ikinci *{
+
+	text-decoration: none;
+
+}
+div.kutular{
+	width: 200px;
+	height: 100px;
+	background-color: #474787;
+	float: left;
+	margin-right: 25px;
+	margin-top: 50px;
+	text-align: center;
+	line-height: 100px;
+	box-shadow: 5px 5px 5px 1px black;
+	/*yatay dikey blur büyüklük*/
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+p#p{
+	width: 400px;
+	height: 400px;
+
+	margin: auto;
+	border-style: dashed dotted double groove;
+	border-color: black;
+	border-width: 15px 5px 15px 5px;
+	border-color: #00a8ff #fbc531 #273c75 #dcdde1;
+
+ 
+}
+div.mkutu{
+	margin:75px 0px 0px 75px;
+	width: 500px;
+	height: 250px;
+	background-color: #ED4C67;
+	float: left;
+
+}
+div#pkutu{
+	/*width: 500px;
+	height: 250px;*/
+	background-color: #c44569;
+	margin: 25px 25px 25px 25px;
+    padding:50px 50px 50px 100px ;
+ 	
+}
+div.kutu{
+	width: 400px;
+	height: 400px;
+	border: 2px solid black;
+	border-radius: 0px 25px;
+	/*taşan kısmı düzenleme */
+	overflow: auto;
+	margin: 5px;
+	float: left;
+
+
+
+
+
+}
+
+div.clear{
+	clear: left;
+}
+
+div#public{
+	width: 900px;
+	height: 2000px;
+	border: 2px solid blue;
+	margin: auto; 
+	position: relative;
+}
+
+div#sandık1{
+	width: 250px;
+	height: 250px;
+	background-color: black;
+	position: static;
+	top: 70px;
+	left: 45px;
+	color:white;
+	text-align: center;
+
+}
+
+
+div#sandık2{
+	width: 250px;
+	height: 250px;
+	background-color: orange;
+	position: relative;
+	top: 5px;
+	left: 45px;
+	text-align: center; 
+
+
+}
+div#sandık3{
+	width: 250px;
+	height: 250px;
+	background-color: cyan;
+	position: absolute;
+	top: 25px;
+	left: 350px;
+	text-align: center;
+
+}
+/* bu sandık display none olduğu için görülmaz*/
+div#sandık4{
+	width: 250px;
+	height: 250px;
+	background-color: cyan;
+	position: absolute;
+	top: 35px;
+	left: 45px;
+	text-align: center;
+	display: none;
+}
+/* div var ama görülmüyor dizaynda etkili*/
+div#sandık5{
+	width: 250px;
+	height: 250px;
+	background-color: orange;
+	position: relative;
+	top: 75px;
+	left: 45px;
+	text-align: center; 
+	visibility: hidden; 
+}
+p#psim{
+	display: inline;
+}
+
+ul{
+	text-align: center;
+	padding: 0px;
+
+}
+
+li{
+	/*tüm satırı işgal etmesini engeller*/
+	display: inline-block;
+	background-color: yellow;
+	padding:5px;
+}
+
+div#section{
+	margin: 50px;
+	width: 700px;
+	height: 700px;
+
+	border:2px solid black;
+}
+/* child selector*/
+section > h1{
+	color:red;
+}
+section > p{ 
+	color:cyan;
+
+
+ }
+
+ /*sibling sectiob kendinden sonrakilerin hepsini seçer */
+
+section ~ span {
+
+	color:yellow;
+	
+}
+/*  adjecent sibling kendinden hemen sonra gelen ilk */
+
+
+section + span {
+
+	font-size: 55px;
+	
+}
+div#site{
+	background-color: white;
+	width: 500px;
+	height: 500px;
+	font-size: 25px;
+}
+/*niteliğe göre seç,m*/
+a[target]{
+	color:red;
+}
+
+/*niteliğin içeriğine göre seçme*/
+
+a[target="_top"]{
+
+	font-size: 55px;
+}
+
+a[target ~= "_top"]{
+
+	color: blue;
+}
+/*değerin başlamasını istediğimiz ilk şeyegöre seçer*/
+
+a[href^="http://"]{
+
+	color:#222f3e ;
+}
+/*değerin bitmesini istediğimiz şeye göre seçer*/
+a[href$="digizevahir.com"]{
+
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+/*içinde olmasını istediğimiz şeye göre seçer*/
+
+a[href*="digizevahir"]{
+
+	font-size: 65px;
+	background-image: url(icon.png);
+
+}
+
+div#input{
+	width: 900px;
+	height: 600px;
+	margin: 50px 100px;
+	background-color: white;
+	padding: 25px 55px ;
+}
+
+input:disabled{
+	border: 2px solid red;
+}
+/*ilk çocuğu seçer*/
+li:first-child{
+	color:red;
+}
+
+li:last-child{
+	color:blue;
+}
+/*tek child olma koşuluyla onu seçer */
+span:only-child{
+	color:orange;
+}
+/*unique child olma koşuluyla seçer seçer*/
+span,h1:only-of-type{
+	color:#2ecc71;
+}
+/*belirtilen tipite ilk eleman*/
+p:first-of-type{
+	color:blue;
+
+}
+
+/*belirtilen tipite son eleman*/
+p:last-of-type{
+	color:black;
+
+}
+/*belirlenen elemanı stiller*/
+li:nth-child(3){
+	color:red;
+
+}
+/*tek sayı olan elemanları seçer 
+nth-child(2n+1) de olabliri*/
+li:nth-child(odd){
+	font-size: 10px;
+}
+/*çift sayı olan elemanları seçer 
+nth-child(even) de olabliri*/
+li:nth-child(2n){
+	font-size: 25px;
+}
+/*kaç kaç atlanacağı n + kaçıncı elemandan bailanacağı */
+li:nth-child(4n+1){
+
+	text-decoration: underline; 
+	background-color: white;
+}
+
+div#kap{
+	width: 1050px;
+	height: 500px;
+	background-color: white;
+	margin: auto;
+	/*divleri gerekirse küçültere sığdırı*/
+	display: flex;
+	/*dizilme yönünü belirler*/
+	flex-direction: row;
+	/* eğer sığmıyorsa alt satıra geçer */
+	flex-wrap: wrap;
+/*sıralamanın nerden başlicanı belirler*/
+	justify-content: space-between;
+/*dikeyde konumu hakkında*/
+	align-items: flex-end;
+
+	align-content: stretch;
+}
+div.ickutu{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	margin: 10px;
+	text-align: center;
+	line-height: 200px;
+
+}
+
+div.once{
+	/*sırada yer değiştirme*/
+	order: -1;
+}
+div#salam{
+	margin: auto;
+	background-color:red ;
+	width: 800px;
+	height: 600px;
+	border: 2px solid black ;
+	/*border vs eklendiğinde alanı büyütmez*/
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+/*salam üzerine gelince slm üzerinde bunları yap demek*/
+div#salam:hover div.slm{
+	/*geçiş yerini belirler*/
+	transform: translate(100px,100px);
+	/*büyütür*/
+
+	transform: scale(1.5 );
+ 	/*döndürür*/
+	transform: rotate(725deg);
+	/*eğer */
+	transform: skew(20deg, 20deg);
+	/*all in one*/
+
+transform: translate(50px,50px) scale(2) rotate(725deg) 
+skew(20deg,20deg);
+
+
+}
+
+div.slm{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	/*geçiş hızını belirler*/
+	transition: 1s;
+}

@@ -1,0 +1,168 @@
+body{
+	background-color: rgba(0,0,0,0.05)
+}
+
+.tarife{
+	height: 95%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icerik-genel{
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.icerik-div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.icerik{
+	border: 2px solid rgba(0,0,0,0.1);
+	background-color: white;
+	width: 30%;
+	margin: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 11%;
+	height: 95vh;
+
+}
+
+.dis-icerik {
+	width: 100%;
+    margin-top: 58%;
+}
+.icerik-top{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.icerik-top #top-pay-over{
+	
+
+	margin-top: 95px;
+	/*transform: translate(0,30px);*/
+}
+.top-img{
+	transition: all .9s ease;
+	opacity: 1;
+}
+.icerik:hover .top-img{
+	opacity: 0;
+}
+.icerik-top .top-img img {
+	transition: all .9s ease;
+    margin-top: 25%;
+    width: 67%;
+}
+.icerik:hover .top-img img{
+	transform: translate(0,-150px);
+}
+.top-pay-over{
+	width: 100%;
+	
+	opacity: 0;
+
+}
+
+.top-pay {
+	opacity: 0;
+	transition: all 2s ease;
+	color: white;
+	width: 100%;
+	font-size: 150%;
+	margin-top:5%;
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+	justify-content: center;
+}
+.icerik:hover .top-pay{
+	opacity: 1;
+	
+
+}
+.icerik:hover .top-pay-over{
+	opacity: 1;	
+	transform: translate(0,-300px);
+
+}
+
+
+.icerik-top #basic{
+	background-color: #999895;
+
+
+}
+.icerik-top #premium{
+	background-color: #c98b00;
+	
+
+}
+.icerik-top #logo{
+	background-color: #16a085;
+}
+
+
+.pay-after{
+	margin-left: 3%;
+}
+
+.icerik-bot{
+	transition: all .8s ease;
+	opacity: 0;
+	visibility: hidden;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+
+}
+.icerik-bot-over{
+	opacity: 0;
+
+	
+}
+.icerik:hover .icerik-bot{
+
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0,-280px);
+}
+.icerik:hover .icerik-bot-over{
+	opacity: 1;
+
+
+}
+
+.metin:nth-child(2n){
+
+	background-color: rgba(0,0,0,0.05);
+	border:2px solid rgba(0,0,0,0.05);
+
+}
+
+.metin{
+
+	width: 100%;
+
+	
+}
+

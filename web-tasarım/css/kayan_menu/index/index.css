@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+	padding:0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+
+}
+
+.ana_div{
+	
+	 display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+}
+.metin{
+	
+    
+	opacity: 0;
+	color:#e3e5e5;
+	transition: 0.7s;
+}
+.metin_div{
+	opacity: 0;	}
+
+.icerik{
+	width: 24%;
+	display: flex;
+	/*justify-content: center;
+	*/flex-direction: column;
+	
+	border:2px solid rgba(0,0,0,0.5);
+	margin: 1%;
+	border-radius: 2%;
+	padding: 1%;
+
+}
+.icerik:hover .icon i {
+	transform: translate(0px,-160px);
+
+
+
+}
+.icerik:hover .icon_div h3{
+	transform: translate(0px,-160px);
+
+
+
+}
+.icerik:hover .metin{
+
+	transform: translate(0px,-150px);
+	color:black;
+	opacity: 1;
+	visibility: visible;
+
+
+
+
+}
+.icerik:hover .metin_div{
+	opacity: 1;
+	
+
+
+
+
+}
+.icon_div{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8rem;
+
+
+
+	
+}
+.icon_div h3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	transition: 0.5s;
+
+}
+.icon{
+	color:black;
+
+	
+
+	
+	
+	
+}
+.icon i{
+	font-size: 55px;
+	transition: 0.5s;
+
+}
